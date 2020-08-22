@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="812.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bandeiras.FXMLDocumentController">
+    <children>
+      <Label layoutX="57.0" layoutY="111.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Nome">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="148.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Nome Oficial">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="186.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Capital">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="223.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Cód ISO">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="258.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Continente">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="295.0" prefHeight="22.0" prefWidth="130.0" stylesheets="@../style/style.css" text="Bandeira">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNome" layoutX="194.0" layoutY="110.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOficialNome" layoutX="194.0" layoutY="147.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCapital" layoutX="194.0" layoutY="185.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtISO" layoutX="194.0" layoutY="222.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContinente" layoutX="194.0" layoutY="257.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBandeira" layoutX="194.0" layoutY="294.0" prefHeight="22.0" prefWidth="300.0" styleClass="input-field" stylesheets="@../style/style.css" unFocusColor="#838383">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnCadastrar" layoutX="57.0" layoutY="337.0" onAction="#cadastro" prefHeight="43.0" prefWidth="120.0" ripplerFill="#d7d7d7" styleClass="button-primary" stylesheets="@../style/style.css" text="Salvar" textFill="#323232" />
+      <JFXButton fx:id="btnListar" layoutX="194.0" layoutY="337.0" onAction="#listar" prefHeight="43.0" prefWidth="120.0" ripplerFill="#d7d7d7" styleClass="button-primary" stylesheets="@../style/style.css" text="Atualizar" textFill="#323232" />
+      <Label layoutX="210.0" layoutY="40.0" text="BANDEIRAS" textFill="#6f6f6f">
+         <font>
+            <Font name="Lato Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab" alignment="CENTER" layoutX="326.0" layoutY="337.0" prefHeight="43.0" prefWidth="170.0" text="Bandeiras" textAlignment="CENTER" textFill="#6f6f6f" wrapText="true">
+         <font>
+            <Font name="Lato Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPaises" layoutX="55.0" layoutY="408.0" prefHeight="350.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="colISO" text="SIGLA" />
+          <TableColumn fx:id="colNome" prefWidth="200.0" sortType="DESCENDING" text="Nome" />
+            <TableColumn fx:id="colCapital" minWidth="0.0" prefWidth="158.0" text="Capital" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
