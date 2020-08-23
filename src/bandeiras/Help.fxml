@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="helpWindow" prefHeight="260.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bandeiras.HelpController">
+   <children>
+      <JFXButton fx:id="btnClose" layoutX="140.0" layoutY="200.0" onAction="#closeAction" prefHeight="43.0" prefWidth="120.0" ripplerFill="#d7d7d7" styleClass="button-primary" stylesheets="@../style/style.css" text="Fechar" textFill="#323232" />
+      <Label layoutX="70.0" layoutY="14.0" text="PROJETO: BANDEIRAS" textFill="#6f6f6f">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="55.0" prefHeight="22.0" prefWidth="312.0" stylesheets="@../style/style.css" text="Por: Eduardo Silva" textFill="#757575">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="87.0" prefHeight="22.0" prefWidth="312.0" stylesheets="@../style/style.css" text="Curso: Ciências da Computação" textFill="#757575">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="136.0" prefHeight="22.0" prefWidth="312.0" stylesheets="@../style/style.css" text="Banco de dados: dbbandeira" textFill="#757575">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="168.0" prefHeight="22.0" prefWidth="312.0" stylesheets="@../style/style.css" text="Tabela: tbbandeira" textFill="#757575">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="45.0" layoutY="123.0" prefWidth="312.0" />
+   </children>
+</AnchorPane>
