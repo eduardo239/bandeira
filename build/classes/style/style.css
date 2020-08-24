@@ -1,0 +1,41 @@
+.input-field {
+    -fx-font-size: 16;
+    -fx-prompt-text-fill: #a1a1a1;
+    -jfx-unfocus-color : #bcbcbc;
+    -jfx-focus-color : #FF9086;
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: right center;
+    -fx-padding : 0 0 0 0;
+    -fx-text-fill : #2b2b2b;
+    -fx-text-box-border: red ;
+    -fx-focus-color: red ;
+    -fx-background-color: #ffeeee;
+}
+
+.button-imagem {
+    -fx-text-fill : #A25B55;
+    -fx-background-color: #FBD7D4;
+    -fx-font-size: 15;
+    -fx-font-family: "calibri";
+    -fx-border-radius: 0;
+}
+.button-limpar {
+    -fx-text-fill : #434343;
+    -fx-background-color: #eee;
+    -fx-font-size: 12;
+    -fx-font-family: "calibri";
+    -fx-border-radius: 0pt;
+}
+
+.button-primary {
+    -fx-text-fill : #fff;
+    -fx-background-color: #FF9086;
+    -fx-font-size: 15;
+    -fx-font-family: "calibri";
+}
+
+.label-primary {
+    -fx-text-fill : #2b2b2b;
+    -fx-background-color: #fff;
+    -fx-font-size: 14;
+}
