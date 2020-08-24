@@ -13,10 +13,10 @@ import java.util.logging.Logger;
  * @author eucri
  */
 public class ConnectionFactory {
-    private static String DRIVER = "com.mysql.jdbc.Driver";
-    private static String URL = "jdbc:mysql://localhost:3306/dbbandeira";
-    private static String USER = "root";
-    private static String PASS = "123";
+    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://localhost:3306/dbbandeira";
+    private static final String USER = "root";
+    private static final String PASS = "123";
     
     public static Connection getConnection() {
         try {

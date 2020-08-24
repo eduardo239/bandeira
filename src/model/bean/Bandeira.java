@@ -1,7 +1,10 @@
 package model.bean;
 
+import java.sql.Blob;
+import javafx.scene.image.Image;
+
 /**
- * @author eucri
+ * @author eduardo
  */
 public class Bandeira {
     
@@ -11,17 +14,8 @@ public class Bandeira {
     private String capital;
     private String codISO;
     private String continente;
-    private String bandeira;
-
-//    public Bandeira(int idPais, String nomePais, String nomeOficial, String capital, String codISO, String continente, String bandeira) {
-//        this.idPais = idPais;
-//        this.nomePais = nomePais;
-//        this.nomeOficial = nomeOficial;
-//        this.capital = capital;
-//        this.codISO = codISO;
-//        this.continente = continente;
-//        this.bandeira = bandeira;
-//    }
+    private Blob bandeira;
+    private Image image;
     
     public int getIdPais() {
         return idPais;
@@ -71,13 +65,26 @@ public class Bandeira {
         this.continente = continente;
     }
 
-    public String getBandeira() {
+    public Blob getBandeira() {
         return bandeira;
     }
 
-    public void setBandeira(String bandeira) {
+    public void setBandeira(Blob bandeira) {
         this.bandeira = bandeira;
     }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+
+
+    
+    
 
 
 }

@@ -2,7 +2,6 @@ package bandeiras;
 
 import javafx.scene.image.Image;
 
-import java.awt.Toolkit;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,9 +9,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.dao.BandeiraDAO;
 
-/**
- * @author eucri
- */
 public class Bandeiras extends Application {
     
     @Override
@@ -22,11 +18,9 @@ public class Bandeiras extends Application {
         Scene scene = new Scene(root);
         
         stage.getIcons().add(new Image("/resources/a.png"));
-        
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        
         
     }
 

@@ -11,12 +11,20 @@
     -fx-focus-color: red ;
     -fx-background-color: #ffeeee;
 }
-.button-limpar {
-    -fx-text-fill : #2b2b2b;
-    -fx-background-color: #eee;
+
+.button-imagem {
+    -fx-text-fill : #A25B55;
+    -fx-background-color: #FBD7D4;
     -fx-font-size: 15;
     -fx-font-family: "calibri";
     -fx-border-radius: 0;
+}
+.button-limpar {
+    -fx-text-fill : #434343;
+    -fx-background-color: #eee;
+    -fx-font-size: 12;
+    -fx-font-family: "calibri";
+    -fx-border-radius: 0pt;
 }
 
 .button-primary {
