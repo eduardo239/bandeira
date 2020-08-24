@@ -21,7 +21,6 @@ public class Bandeiras extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        
     }
 
     /**
